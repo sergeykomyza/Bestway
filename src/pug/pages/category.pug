@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Bestway | Аксессуары для СПА
+	body
+
+		include ./../sections/_header.pug
+
+		.container 
+			+breadcrumbs({'items': ['Главная', 'Каталог товаров', 'Аксессуары для СПА']}) 
+
+		main.page.catalog 
+
+			.fixed-text Каталог
+
+			.container 
+
+				h1.main-title Аксессуары для СПА
+
+				.catalog__section 
+					.filter 
+						each item in ['Длина, см','Ширина, см','Диаметр, см','Высота, см']
+							.parameter 
+								button.parameter__button.js-rangeToggle= item
+									svg(viewbox='0 0 512 512')
+										path(d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z')
+								.parameter__range 
+									input.parameter__val.parameter__val--min(type="text" value="4000")
+									span.parameter__divider -
+									input.parameter__val.parameter__val--max(type="text" value="120000")
+									button.parameter__btn
+										img(src="img/icon-arrow-btn.svg", alt="@")
+						.parameter.parameter-sort 
+							button.parameter__button.js-rangeToggle Сортировать: по артиклу
+								svg(viewbox='0 0 512 512')
+									path(d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z')
+							.parameter-sort__choose
+								each item in ['Цена по возрастанию','Цена по убыванию','По популярности','По наличию','По артиклу']
+									label.parameter-sort__item 
+										input.parameter-sort__input(type="checkbox")
+										span.parameter-sort__check 
+										span.paramter-sort__text= item
+
+					.catalog__products 
+						+productPreview('product-5.jpg', 'Подушка для СПА Lay-Z-Spa Pillow Spa Accessory', 'Артикул: 60307', '1 300')
+						+productPreview('product-6.jpg', 'Фильтрующий картридж (тип VI) Lay-Z-Spa™ Type VI Filter Cartridge', 'Артикул: 58323', '8 980')
+						+productPreview('product-7.jpg', 'Противомикробный фильтрующий картридж (тип IV) Lay-Z-Spa™ Type VI Antimicrobial Filter Cartridge', 'Артикул: 58477', '12 430')
+						+productPreview('product-8.jpg', 'Светодиодный светильник для SPA Lay-Z-Spa™ ColorJet LED Light Spa Accessory', 'Артикул: 58471', '22 360')
+						+productPreview('product-5.jpg', 'Подушка для СПА Lay-Z-Spa Pillow Spa Accessory', 'Артикул: 60307', '1 300')
+						+productPreview('product-6.jpg', 'Фильтрующий картридж (тип VI) Lay-Z-Spa™ Type VI Filter Cartridge', 'Артикул: 58323', '8 980')
+						+productPreview('product-7.jpg', 'Противомикробный фильтрующий картридж (тип IV) Lay-Z-Spa™ Type VI Antimicrobial Filter Cartridge', 'Артикул: 58477', '12 430')
+						+productPreview('product-8.jpg', 'Светодиодный светильник для SPA Lay-Z-Spa™ ColorJet LED Light Spa Accessory', 'Артикул: 58471', '22 360')
+						+productPreview('product-5.jpg', 'Подушка для СПА Lay-Z-Spa Pillow Spa Accessory', 'Артикул: 60307', '1 300')
+						+productPreview('product-6.jpg', 'Фильтрующий картридж (тип VI) Lay-Z-Spa™ Type VI Filter Cartridge', 'Артикул: 58323', '8 980')
+						+productPreview('product-7.jpg', 'Противомикробный фильтрующий картридж (тип IV) Lay-Z-Spa™ Type VI Antimicrobial Filter Cartridge', 'Артикул: 58477', '12 430')
+						+productPreview('product-8.jpg', 'Светодиодный светильник для SPA Lay-Z-Spa™ ColorJet LED Light Spa Accessory', 'Артикул: 58471', '22 360')
+						+productPreview('product-5.jpg', 'Подушка для СПА Lay-Z-Spa Pillow Spa Accessory', 'Артикул: 60307', '1 300')
+						+productPreview('product-6.jpg', 'Фильтрующий картридж (тип VI) Lay-Z-Spa™ Type VI Filter Cartridge', 'Артикул: 58323', '8 980')
+						+productPreview('product-7.jpg', 'Противомикробный фильтрующий картридж (тип IV) Lay-Z-Spa™ Type VI Antimicrobial Filter Cartridge', 'Артикул: 58477', '12 430')
+						+productPreview('product-8.jpg', 'Светодиодный светильник для SPA Lay-Z-Spa™ ColorJet LED Light Spa Accessory', 'Артикул: 58471', '22 360')
+						+productPreview('product-5.jpg', 'Подушка для СПА Lay-Z-Spa Pillow Spa Accessory', 'Артикул: 60307', '1 300')
+						+productPreview('product-6.jpg', 'Фильтрующий картридж (тип VI) Lay-Z-Spa™ Type VI Filter Cartridge', 'Артикул: 58323', '8 980')
+						+productPreview('product-7.jpg', 'Противомикробный фильтрующий картридж (тип IV) Lay-Z-Spa™ Type VI Antimicrobial Filter Cartridge', 'Артикул: 58477', '12 430')
+						+productPreview('product-8.jpg', 'Светодиодный светильник для SPA Lay-Z-Spa™ ColorJet LED Light Spa Accessory', 'Артикул: 58471', '22 360')
+					.pagination 
+						each item, i in [1, 2, 3, 4, 5, 6]
+							a(href="#" class= i === 0 ? 'pagination__item active' : 'pagination__item')= i+1
+
+		include ./../sections/_footer.pug
+
+		include ./../sections/_scripts.pug

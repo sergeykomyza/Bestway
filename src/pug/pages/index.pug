@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Bestway | Список страниц
+
+		style.
+			.index-page{
+				padding: 40px 0;
+				text-align: center;
+			}
+			.index-page h1{
+				margin: 0 0 30px 0;
+				font-size: 60px;
+			}
+			.index-page ul li{
+				margin: 0 0 10px 0;
+			}
+			.index-page ul a{
+				position: relative;
+				display: block;
+				color: #000;
+				font-size: 20px;
+			}
+			.index-page ul a:after{
+				content: '';
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #DDD;
+				transform: scaleX(0);
+				transition: transform .3s, background .3s;
+			}
+			.index-page ul a:hover:after{
+				transform: scaleX(1);
+			}
+
+	-
+		menu = [
+			{title: 'Макет',           href: 'https://www.figma.com/file/ihTx34NdDVtjse54J1doic/Bestway?type=design&node-id=0-1&t=I9eRzVMCKa9y6HON-0'},
+			{title: 'Templates',       href: 'templates.html'},
+			{title: 'Главная',         href: 'home.html'},
+			{title: 'Каталог ',        href: 'catalog.html'},
+			{title: 'Категория ',      href: 'category.html'},
+			{title: 'Карточка товара', href: 'product.html'},
+			{title: 'О компании',      href: 'about.html'},
+			{title: 'Блог',            href: 'blog.html'},
+			{title: 'Статья',          href: 'article.html'},
+			{title: 'Контакты',        href: 'contacts.html'}
+		]
+
+	
+
+	body
+
+		.index-page
+			h1 Список страниц
+
+			ul 
+				each item in menu 
+					li 
+						a(href="" + item.href target="_blank")= item.title
+
+

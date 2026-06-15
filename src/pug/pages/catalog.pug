@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Bestway | Каталог
+	body
+
+		include ./../sections/_header.pug
+
+		.container 
+			+breadcrumbs({'items': ['Главная', 'Каталог товаров']}) 
+
+
+		main.page.catalog 
+
+			.fixed-text Каталог
+
+			.container 
+
+				h1.main-title Каталог товаров
+
+				.catalog__section 
+					h6.section-title Лодки, байдарки, каяки
+					.catalog__products 
+						+productPreview('product-1.jpg', 'Надувная байдарка "Cove Champion" 275x81см, алюм.весло 218см, насос 62086, до 100кг', 'Артикул: 65115 BW', '9 090')
+						+productPreview('product-2.jpg', 'Надувная байдарка "Koracle" 270x100см, алюм.весло 218см, насос 62086, до 150кг', 'Артикул: 65097 BW', '8 980')
+						+productPreview('product-3.jpg', 'Надувная байдарка "Lite-Rapid X2" 321х88см, алюм.вёсла 218см, насос 62086, до 160кг', 'Артикул: 65077 BW', '12 430')
+						+productPreview('product-4.jpg', 'Надувная байдарка "Ventura" 280х86см, алюм.весло 218см, насос 62086, до 130кг', 'Артикул: 65118 BW', '22 360')
+					+linkBtn('Смотреть все', 'catalog__button')
+
+				.catalog__section 
+					h6.section-title Аксессуары для СПА
+					.catalog__products 
+						+productPreview('product-5.jpg', 'Подушка для СПА Lay-Z-Spa Pillow Spa Accessory', 'Артикул: 65115 BW', '1 300')
+						+productPreview('product-6.jpg', 'Фильтрующий картридж (тип VI) Lay-Z-Spa™ Type VI Filter Cartridge', 'Артикул: 65097 BW', '8 980')
+						+productPreview('product-7.jpg', 'Противомикробный фильтрующий картридж (тип IV) Lay-Z-Spa™ Type VI Antimicrobial Filter Cartridge', 'Артикул: 65077 BW', '12 430')
+						+productPreview('product-8.jpg', 'Светодиодный светильник для SPA Lay-Z-Spa™ ColorJet LED Light Spa Accessory', 'Артикул: 65077 BW', '22 360')
+					+linkBtn('Смотреть все', 'catalog__button')
+				
+				.catalog__section 
+					h6.section-title SUP-доски
+					.catalog__products 
+						+productPreview('product-9.jpg', 'Стеклопластиковое весло Hydro-Force™ Fiberglass Paddle', 'Артикул: 65115 BW', '1 300')
+						+productPreview('product-10.jpg', 'Набор для надувного SUP-борда Hydro-Force™ Oceana Inflatable Stand-Up Paddleboard Set', 'Артикул: 65097 BW', '8 980')
+						+productPreview('product-11.jpg', 'Набор для надувного SUP-борда Hydro-Force™ Kahawai Inflatable Stand-Up Paddleboard Set', 'Артикул: 65077 BW', '12 430')
+						+productPreview('product-12.jpg', 'Набор для надувного SUP-борда Hydro-Force™ HuaKa’i Tech Inflatable Stand-Up Paddleboard Set', 'Артикул: 65077 BW', '22 360')
+					+linkBtn('Смотреть все', 'catalog__button')
+
+				.catalog__section 
+					h6.section-title Новые поступления
+					p.catalog__info Апрель 2023
+					.swiper.products-carousel.catalog__slider.js-catalogSlider 
+						.swiper-wrapper
+							+productPreview('product-13.jpg', 'Фильтр-насос', 'Артикул: 58381(H1)ASS18', '1 300')
+							+productPreview('product-14.jpg', 'Чаша для 57266', 'Артикул: 58381(H1)ASS18', '2 900')
+							+productPreview('product-13.jpg', 'Фильтр-насос', 'Артикул: 58381(H1)ASS18', '1 300')
+							+productPreview('product-14.jpg', 'Чаша для 57266', 'Артикул: 58381(H1)ASS18', '2 900')
+							+productPreview('product-14.jpg', 'Чаша для 57266', 'Артикул: 58381(H1)ASS18', '2 900')
+						.slider-navigation
+
+				.catalog__section 
+					h6.section-title Акционные товары
+					p.catalog__info Бесплатная доставка
+					.swiper.products-carousel.catalog__slider.js-catalogSlider 
+						.swiper-wrapper
+							+productPreview('product-15.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-16.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-17.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-18.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-19.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+						.slider-navigation
+				
+				.catalog__section 
+					h6.section-title Популярные сезонные товары
+					p.catalog__info Лето 2020
+					.swiper.products-carousel.catalog__slider.js-catalogSlider 
+						.swiper-wrapper
+							+productPreview('product-15.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-16.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-17.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-18.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+							+productPreview('product-19.jpg', 'Надувной SPA-бассейн с гидромассажной ванной для 2-4 человек Lay-Z-Spa™ Cancun AirJet™', 'Артикул: 54286', '1 300')
+						.slider-navigation
+
+		include ./../sections/_footer.pug
+
+		include ./../sections/_scripts.pug

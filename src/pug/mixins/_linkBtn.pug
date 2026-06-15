@@ -1,0 +1,7 @@
+mixin linkBtn(text, classname)
+	if(classname) 
+		a(class=`button ${classname}` href="#")
+			span= text
+	else
+		a.button(href="#")
+			span= text

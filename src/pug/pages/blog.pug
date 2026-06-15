@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Bestway | Блог
+	body
+
+		include ./../sections/_header.pug
+
+		.container 
+			+breadcrumbs({'items': ['Главная', 'Блог']}) 
+
+		main.page.blog 
+
+			.fixed-text новости
+
+			.container
+
+				h1.main-title Какие у нас новости
+
+			.blog__box 
+				.tabs
+					.tabs__header
+						.container
+							.tabs__buttons
+								each item in ['Все статьи','Новости','Статьи','Обзоры']
+									button.tabs__button= item
+
+					.container
+
+						.tabs__contents 
+
+							.tabs__content
+								.blog__previews
+									- let n = 0
+									while n < 12
+										- n++
+										a(href="article.html") 
+											article.post-preview 
+												figure.post-preview__fotobox 
+													.post-hashtag Новость
+													img.post-preview__foto(src="img/post.jpg", alt="@")
+												.post-preview__title 
+													p Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки
+							
+							.tabs__content
+								.blog__previews
+									- let k = 0
+									while k < 12
+										- k++
+										a(href="#") 
+											article.post-preview 
+												figure.post-preview__fotobox 
+													.post-hashtag Новость
+													img.post-preview__foto(src="img/post.jpg", alt="@")
+												.post-preview__title 
+													p Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки
+
+							.tabs__content
+								.blog__previews
+									- let i = 0
+									while i < 12
+										- i++
+										a(href="#") 
+											article.post-preview 
+												figure.post-preview__fotobox 
+													.post-hashtag Статья
+													img.post-preview__foto(src="img/post.jpg", alt="@")
+												.post-preview__title 
+													p Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки
+
+							.tabs__content 
+								.blog__previews
+									- let t = 0
+									while t < 12
+										- t++
+										a(href="#") 
+											article.post-preview 
+												figure.post-preview__fotobox
+													.post-hashtag Обзор
+													img.post-preview__foto(src="img/post.jpg", alt="@")
+												.post-preview__title 
+													p Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки
+
+					+linkBtn('Показать все', 'blog__button')
+
+		include ./../sections/_footer.pug
+
+		include ./../sections/_scripts.pug

@@ -1,0 +1,41 @@
+include ./../mixins/_button.pug
+
+footer.footer 
+	.container 
+		.footer__box 
+			.footer__row
+				figure.footer-logo 
+					img.footer-logo__img(src="img/logo.svg", alt="logo")
+					figcaption.footer-logo__text Bestway Россия: бассейны, #[br] оборудование, аксессуары
+
+			.footer__row
+				nav.footer-nav 
+					h6.footer-nav__title Полезное
+					ul.footer-nav__list
+						each item in ['Оплата и доставка','Где купить','Блог','Гарантия','Частые вопросы','Контакты']
+							li.footer-nav__item 
+								a.footer-nav__link(href="#")= item
+			.footer__row
+				nav.footer-nav 
+					h6.footer-nav__title Полезное
+					ul.footer-nav__list 
+						each item in ['Надувные кровати','Каркасные бассейны','Надувные бассейны','Игровые центры','Аксессуары для бассейна']
+							li.footer-nav__item 
+								a.footer-nav__link(href="#")= item
+
+			.footer__row
+				.footer__connect.connect 
+					b.connect__title С нами можно связаться
+					span.connect__timetable ПН-ПТ - #[b с 9:00 до 18:00] #[br] Перерыв с 13:00 до 14:00 #[br] СБ, ВС - выходной
+					a.connect__phone(href="tel:+78006005525") +7 (800) 600-55-25 
+					a.connect__mail(href="mailto:info@bestwayrussia.ru") info@bestwayrussia.ru
+					.footer-messengers
+						each item in ['icon-telegram.svg','icon-facebook.svg','icon-instagram.svg','icon-twitter.svg','icon-youtube.svg']
+							a.footer-messengers__link(href="#")
+								img.footer-messengers__icon(src="img/" + item, alt="@")
+
+		.subscribe
+			b.subscribe__title Подписаться на акции и новости
+			form.subscribe__form(action="#")
+				input.subscribe__input(type="text" placeholder="Введите ваш email")
+				+button('Подписаться', 'subscribe__button')

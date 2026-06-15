@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Bestway | Главная
+	body.home
+
+		include ./../sections/_header.pug
+
+		main.home__box
+			
+			.home__row
+				.home__present.home__present--products 
+					.home__title Продукция Bestway 
+					+linkBtn('Узнать больше', 'home__btn')
+				picture
+					source(media="(max-width: 920px)" srcset="img/home-left-img-mobile.webp")
+					img.home__img(src="img/home-left-img.webp", alt="@") 
+			
+			.home__row.home__row--services
+				.home__present.home__present--services 
+					.home__title Сервисный центр Bestway 
+					+linkBtn('Узнать больше', 'home__btn')
+				img.home__img(src="img/home-right-img.webp", alt="@")
+
+		include ./../sections/_scripts.pug

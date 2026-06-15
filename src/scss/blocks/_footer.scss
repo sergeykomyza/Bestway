@@ -1,0 +1,125 @@
+.footer{
+    margin-top: auto;
+    padding: 25px 0 40px;
+    background: #0D0B1B;
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 768px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &-logo{
+        &__text{
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+        }
+    }
+
+    &-nav{
+        @media(max-width: 768px){
+            display: none;
+        }
+        &__title{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #FFF;
+        }
+        &__list{
+
+        }
+        &__item{
+            margin-top: 10px;
+        }
+        &__link{
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 14px;
+            color: #FFF;
+            transition: all .3s;
+            &:hover{
+                opacity: .5;
+            }
+        }
+    }
+
+    &__connect{
+        @media(max-width: 768px){
+            margin-top: 40px;
+        }
+    }
+
+    &-messengers{
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 14px;
+        &__link{
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #3D3C49;
+            padding: 4px;
+            transition: all .3s;
+            &:hover{
+                background: #8E8AAB;
+            }
+        }
+        &__icon{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.subscribe{
+    margin-top: 25px;
+
+    @media(max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        color: #FFF;
+    }
+
+    &__form{
+        margin-top: 14px;
+        position: relative;
+        max-width: 346px;
+        height: 46px;
+    }
+
+    &__input{
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+        padding-right: 131px;
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid #8E8AAB;
+        border-radius: 10px;
+        background: transparent;
+        &:placeholder{
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    &__button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 131px;
+        height: 100%;
+    }
+
+}

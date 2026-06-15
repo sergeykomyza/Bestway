@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Bestway | Templates
+	body
+		include ./../mixins/_breadcrumbs.pug
+		include ./../mixins/_productPreview.pug
+		include ./../mixins/_button.pug
+		// ======================================== HEADER
+		include ./../sections/_header.pug
+		.templates
+			.container
+
+				+breadcrumbs({'items': ['Главная', 'Каталог товаров', 'Аксессуары для СПА']})
+
+				br
+				br
+				+productPreview('product-1.jpg', 'Надувная байдарка "Cove Champion" 275x81см, алюм.весло 218см, насос 62086, до 100кг', 'Артикул: 65115 BW', '9 090') 
+				br
+				br
+				+button('Смотреть все')
+				br
+				br
+
+				br
+				br
+		// ======================================== FOOTER
+		include ./../sections/_footer.pug
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug

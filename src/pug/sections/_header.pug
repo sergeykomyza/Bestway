@@ -1,0 +1,110 @@
+include ./../mixins/_breadcrumbs.pug
+include ./../mixins/_productPreview.pug
+include ./../mixins/_button.pug
+include ./../mixins/_linkBtn.pug
+
+-
+	var menu = [
+		{link: 'catalog.html', name: 'Каталог товаров', list: [
+			{link: 'category.html', name2: 'Надувная мебель', list2: [
+				{link: 'category.html', name3: 'Надувные кровати'},
+				{link: 'category.html', name3: 'Надувные матрасы'},
+				{link: 'category.html', name3: 'Надувные диваны и кресла'},
+				{link: 'category.html', name3: 'Надувные подушки'}
+			]},
+			{link: 'category.html', name2: 'Надувные ватрушки'},
+			{link: 'category.html', name2: 'Насосы, ремкомплекты'},
+			{link: 'category.html', name2: 'Бассейны'},
+			{link: 'category.html', name2: 'Аксессуары'},
+			{link: 'category.html', name2: 'СПА'},
+			{link: 'category.html', name2: 'Химия для бассейнов'},
+			{link: 'category.html', name2: 'Лодка, аксессуары'},
+			{link: 'category.html', name2: 'Плавательные принадлежности'},
+			{link: 'category.html', name2: 'Игровые центры, игрушки'},
+			{link: 'category.html', name2: 'Кемпинг'},
+			{link: 'category.html', name2: 'Уценка'}
+		]},
+		{link: 'about.html', name: 'О нас'},
+		{name: 'Сотрудничество'},
+		{name: 'Где купить'},
+		{link: 'blog.html', name: 'Блог'},
+		{name: 'Гарантия'},
+		{link: 'contacts.html', name: 'Контакты'}
+	]
+
+header.header 
+	.container
+
+		.header-info 
+			.header-logo 
+				a(href="home.html")
+					img.header-logo__img(src="img/logo.svg", alt="@")
+				span.header-logo__text Bestway Россия: бассейны, #[br] оборудование, аксессуары
+			.desktop
+				.header-messengers
+					span.header-messengers__text Задайте вопрос,#[br] мы онлайн
+					.header-messengers__icons 
+						each item in ['icon-telegram.svg','icon-facebook.svg','icon-instagram.svg','icon-twitter.svg','icon-youtube.svg']
+							a.header-messengers__link(href="#")
+								img.header-messengers__icon(src="img/" + item, alt="@")
+			.desktop
+				.header-email 
+					span.header-email__text Электронная почта
+					a.header-email__adress(href="mailto:info@bestwayrussia.ru") info@bestwayrussia.ru
+			.header-phone 
+				a.header-phone__num(href="tel:+78006005525") +7 (800) 600-55-25
+				button.header-phone__ordercall Заказать звонок
+			.mobile 
+				.header__openmenu.js-mMenuOpen
+					each item in [1, 2, 3]
+						span 
+
+	nav.header__nav
+
+		.header__inner
+
+			.mobile 
+				.header__connect.connect 
+					b.connect__title С нами можно связаться
+					span.connect__timetable ПН-ПТ - #[b с 9:00 до 18:00] #[br] Перерыв с 13:00 до 14:00 #[br] СБ, ВС - выходной
+					a.connect__phone(href="tel:+78006005525") +7 (800) 600-55-25 
+					a.connect__mail(href="mailto:info@bestwayrussia.ru") info@bestwayrussia.ru
+					.header-messengers.connect__messengers
+						.header-messengers__icons 
+							each item in ['icon-telegram.svg','icon-facebook.svg','icon-instagram.svg','icon-twitter.svg','icon-youtube.svg']
+								a.header-messengers__link(href="#")
+									img.header-messengers__icon(src="img/" + item, alt="@")
+
+			ul.header-menu
+				each item, i in menu
+					if(i === 0)
+						li.header-menu__item
+							a.header-menu__link(href=item.link)= item.name
+							img.header-menu__icon.js-subMenuOpen(src="img/icon-arrow.svg", alt="@")
+							ul.header-submenu
+								each item2, n in item.list
+									if(n === 0)
+										li.header-submenu__item 
+											a.header-submenu__link(href=item2.link)= item2.name2 
+											img.header-submenu__icon.js-subMenuOpen(src="img/icon-arrow-right.svg", alt="@")
+											ul.header-submenu2
+												each item3 in item2.list2 
+													li.header-submenu2__item
+														a.header-submenu2__link(href=item3.link)= item3.name3
+									else
+										li.header-submenu__item 
+											a.header-submenu__link(href=item2.link)= item2.name2
+					else 
+						li.header-menu__item
+							a.header-menu__link(href=item.link)= item.name
+
+			.header-search 
+				form(action="#")
+					input.header-search__input(type="text" placeholder="Я ищу...")
+					button.header-search__btn 
+						img(src="img/icon-zoom.svg", alt="@")
+
+			.header-mobilelogo
+				img.header-mobilelogo__img(src="img/logo.svg", alt="@")
+				button.header-mobilelogo__closemenu.js-mMenuClose 
+					img(src="img/icon-close-menu.svg", alt="@")

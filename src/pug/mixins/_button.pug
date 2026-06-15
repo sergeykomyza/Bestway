@@ -1,0 +1,7 @@
+mixin button(text, classname)
+	if(classname) 
+		button(class=`button ${classname}`)
+			span= text
+	else
+		button.button
+			span= text 

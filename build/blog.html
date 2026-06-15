@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"/>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <!-- slick slider -->
+    <!-- link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")-->
+    <!-- swiper slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- custom styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Bestway | Блог</title>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="container">
+        <div class="header-info"> 
+          <div class="header-logo"> <a href="home.html"><img class="header-logo__img" src="img/logo.svg" alt="@"/></a><span class="header-logo__text">Bestway Россия: бассейны, <br/> оборудование, аксессуары</span></div>
+          <div class="desktop">
+            <div class="header-messengers"><span class="header-messengers__text">Задайте вопрос,<br/> мы онлайн</span>
+              <div class="header-messengers__icons"> <a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-telegram.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-facebook.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-instagram.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-twitter.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-youtube.svg" alt="@"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="desktop">
+            <div class="header-email"> <span class="header-email__text">Электронная почта</span><a class="header-email__adress" href="mailto:info@bestwayrussia.ru">info@bestwayrussia.ru</a></div>
+          </div>
+          <div class="header-phone"> <a class="header-phone__num" href="tel:+78006005525">+7 (800) 600-55-25</a>
+            <button class="header-phone__ordercall">Заказать звонок</button>
+          </div>
+          <div class="mobile"> 
+            <div class="header__openmenu js-mMenuOpen"><span> </span><span> </span><span> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <div class="header__inner">
+          <div class="mobile"> 
+            <div class="header__connect connect"> <b class="connect__title">С нами можно связаться</b><span class="connect__timetable">ПН-ПТ - <b>с 9:00 до 18:00</b> <br/> Перерыв с 13:00 до 14:00 <br/> СБ, ВС - выходной</span><a class="connect__phone" href="tel:+78006005525">+7 (800) 600-55-25 </a><a class="connect__mail" href="mailto:info@bestwayrussia.ru">info@bestwayrussia.ru</a>
+              <div class="header-messengers connect__messengers">
+                <div class="header-messengers__icons"> <a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-telegram.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-facebook.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-instagram.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-twitter.svg" alt="@"/></a><a class="header-messengers__link" href="#"><img class="header-messengers__icon" src="img/icon-youtube.svg" alt="@"/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="header-menu">
+            <li class="header-menu__item"><a class="header-menu__link" href="catalog.html">Каталог товаров</a><img class="header-menu__icon js-subMenuOpen" src="img/icon-arrow.svg" alt="@"/>
+              <ul class="header-submenu">
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Надувная мебель</a><img class="header-submenu__icon js-subMenuOpen" src="img/icon-arrow-right.svg" alt="@"/>
+                  <ul class="header-submenu2">
+                    <li class="header-submenu2__item"><a class="header-submenu2__link" href="category.html">Надувные кровати</a></li>
+                    <li class="header-submenu2__item"><a class="header-submenu2__link" href="category.html">Надувные матрасы</a></li>
+                    <li class="header-submenu2__item"><a class="header-submenu2__link" href="category.html">Надувные диваны и кресла</a></li>
+                    <li class="header-submenu2__item"><a class="header-submenu2__link" href="category.html">Надувные подушки</a></li>
+                  </ul>
+                </li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Надувные ватрушки</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Насосы, ремкомплекты</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Бассейны</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Аксессуары</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">СПА</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Химия для бассейнов</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Лодка, аксессуары</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Плавательные принадлежности</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Игровые центры, игрушки</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Кемпинг</a></li>
+                <li class="header-submenu__item"> <a class="header-submenu__link" href="category.html">Уценка</a></li>
+              </ul>
+            </li>
+            <li class="header-menu__item"><a class="header-menu__link" href="about.html">О нас</a></li>
+            <li class="header-menu__item"><a class="header-menu__link">Сотрудничество</a></li>
+            <li class="header-menu__item"><a class="header-menu__link">Где купить</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="blog.html">Блог</a></li>
+            <li class="header-menu__item"><a class="header-menu__link">Гарантия</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="header-search"> 
+            <form action="#">
+              <input class="header-search__input" type="text" placeholder="Я ищу..."/>
+              <button class="header-search__btn"> <img src="img/icon-zoom.svg" alt="@"/></button>
+            </form>
+          </div>
+          <div class="header-mobilelogo"><img class="header-mobilelogo__img" src="img/logo.svg" alt="@"/>
+            <button class="header-mobilelogo__closemenu js-mMenuClose"> <img src="img/icon-close-menu.svg" alt="@"/></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container"> 
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+            <li class="breadcrumbs__item"><b>Блог</b></li>
+          </ul>
+    </div>
+    <main class="page blog"> 
+      <div class="fixed-text">новости</div>
+      <div class="container">
+        <h1 class="main-title">Какие у нас новости</h1>
+      </div>
+      <div class="blog__box"> 
+        <div class="tabs">
+          <div class="tabs__header">
+            <div class="container">
+              <div class="tabs__buttons">
+                <button class="tabs__button">Все статьи</button>
+                <button class="tabs__button">Новости</button>
+                <button class="tabs__button">Статьи</button>
+                <button class="tabs__button">Обзоры</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="tabs__contents"> 
+              <div class="tabs__content">
+                <div class="blog__previews"><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="article.html"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a>
+                </div>
+              </div>
+              <div class="tabs__content">
+                <div class="blog__previews"><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Новость</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a>
+                </div>
+              </div>
+              <div class="tabs__content">
+                <div class="blog__previews"><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox"> 
+                        <div class="post-hashtag">Статья</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a>
+                </div>
+              </div>
+              <div class="tabs__content"> 
+                <div class="blog__previews"><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a><a href="#"> 
+                    <article class="post-preview"> 
+                      <figure class="post-preview__fotobox">
+                        <div class="post-hashtag">Обзор</div><img class="post-preview__foto" src="img/post.jpg" alt="@"/>
+                      </figure>
+                      <div class="post-preview__title"> 
+                        <p>Здесь будет название новости в 1 или 2 строки название новости в 1 или 2 строки</p>
+                      </div>
+                    </article></a>
+                </div>
+              </div>
+            </div>
+          </div><a class="button blog__button" href="#"><span>Показать все</span></a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__box"> 
+          <div class="footer__row">
+            <figure class="footer-logo"> <img class="footer-logo__img" src="img/logo.svg" alt="logo"/>
+              <figcaption class="footer-logo__text">Bestway Россия: бассейны, <br/> оборудование, аксессуары</figcaption>
+            </figure>
+          </div>
+          <div class="footer__row">
+            <nav class="footer-nav"> 
+              <h6 class="footer-nav__title">Полезное</h6>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Оплата и доставка</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Где купить</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Блог</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Гарантия</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Частые вопросы</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__row">
+            <nav class="footer-nav"> 
+              <h6 class="footer-nav__title">Полезное</h6>
+              <ul class="footer-nav__list"> 
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Надувные кровати</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Каркасные бассейны</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Надувные бассейны</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Игровые центры</a></li>
+                <li class="footer-nav__item"> <a class="footer-nav__link" href="#">Аксессуары для бассейна</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__row">
+            <div class="footer__connect connect"> <b class="connect__title">С нами можно связаться</b><span class="connect__timetable">ПН-ПТ - <b>с 9:00 до 18:00</b> <br/> Перерыв с 13:00 до 14:00 <br/> СБ, ВС - выходной</span><a class="connect__phone" href="tel:+78006005525">+7 (800) 600-55-25 </a><a class="connect__mail" href="mailto:info@bestwayrussia.ru">info@bestwayrussia.ru</a>
+              <div class="footer-messengers"><a class="footer-messengers__link" href="#"><img class="footer-messengers__icon" src="img/icon-telegram.svg" alt="@"/></a><a class="footer-messengers__link" href="#"><img class="footer-messengers__icon" src="img/icon-facebook.svg" alt="@"/></a><a class="footer-messengers__link" href="#"><img class="footer-messengers__icon" src="img/icon-instagram.svg" alt="@"/></a><a class="footer-messengers__link" href="#"><img class="footer-messengers__icon" src="img/icon-twitter.svg" alt="@"/></a><a class="footer-messengers__link" href="#"><img class="footer-messengers__icon" src="img/icon-youtube.svg" alt="@"/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe"><b class="subscribe__title">Подписаться на акции и новости</b>
+          <form class="subscribe__form" action="#">
+            <input class="subscribe__input" type="text" placeholder="Введите ваш email"/>
+                <button class="button subscribe__button"><span>Подписаться</span></button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- inputmask -->
+    <!-- swiper slider-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- yandex map-->
+    <!-- scripts-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

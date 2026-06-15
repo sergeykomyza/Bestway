@@ -1,0 +1,9 @@
+mixin breadcrumbs(list)
+	ul.breadcrumbs
+		each item, i in list.items 
+			if(i === list.items.length-1)
+				li.breadcrumbs__item
+					b= item
+			else
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="#")= item
